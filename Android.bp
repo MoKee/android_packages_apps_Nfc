@@ -4,10 +4,11 @@ android_app {
     srcs: [
         "src/**/*.java",
         "nxp/**/*.java",
+        "nfcid/**/*.java",
     ],
     platform_apis: true,
     certificate: "platform",
-    jni_libs: ["libnfc_nci_jni"],
+    jni_libs: ["libnfc_nci_jni", "libmokee_nfc_id_jni"],
     static_libs: ["androidx.legacy_legacy-support-v4"],
     optimize: {
         enabled: false,
@@ -21,10 +22,11 @@ android_app {
     srcs: [
         "src/**/*.java",
         "nci/**/*.java",
+        "nfcid/**/*.java",
     ],
     platform_apis: true,
     certificate: "platform",
-    jni_libs: ["libnfc_nci_jni"],
+    jni_libs: ["libnfc_nci_jni", "libmokee_nfc_id_jni"],
     static_libs: ["androidx.legacy_legacy-support-v4"],
     optimize: {
         enabled: false,
